@@ -1,55 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML</title>
-</head>
+    <link rel="icon" type="image/x-icon" href="download.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <header>HTML Index</header>
-        <p>At W3Schools you will find complete references about HTML elements, attributes, events, color names,
-            entities,
-            character-sets, URL encoding, language codes, HTTP messages, browser support, and more:
-        </p>
-        <div class="box">
-            <a href="HTML_Introduction.html" target="_blank" rel="noopener noreferrer">
-                <button>
-                    HTML Tutorial
-                </button>
-            </a>
-            <a href="HTML_Elements.html" target="_blank" rel="noopener noreferrer">
-                <button>
-                    HTML Elements
-                </button>
-            </a>
-            <a href="HTML_Attributes.html" target="_blank" rel="noopener noreferrer">
-                <button>
-                    HTML Attributes
-                </button>
-            </a>
-            <a href="HTML_Headings.html" target="_blank" rel="noopener noreferrer">
-                <button>
-                    HTML Headings
-                </button>
-            </a>
-            <a href="HTML_Paragraphs.html" target="_blank" rel="noopener noreferrer">
-                <button>
-                    HTML Paragraphs
-                </button>
-            </a>
-            <a href="HTML_Introduction.html" target="_blank" rel="noopener noreferrer">
-                <button>
-                    HTML Tutorial
-                </button>
-            </a>
+      <div class="headerbody">
+        <header style="font-weight: bold">HTML Index</header>
+
+        <a href="#HTML_Introduction">
+          <button>HTML Tutorial</button>
+        </a>
+        <a href="#HTML_Elements">
+          <button>HTML Elements and Headings</button>
+        </a>
+        <a href="#HTML_Attributes">
+          <button>HTML Attributes</button>
+        </a>
+
+        <a href="#HTML_Paragraphs" rel="noopener noreferrer">
+          <button>HTML Paragraphs</button>
+        </a>
+        <a href="#HTML_Introduction">
+          <button>HTML Tutorial</button>
+        </a>
+        <a href="#Text_Formatting">
+          <button>Text_Formatting</button>
+        </a>
+        <a href="#Quotation">
+          <button>Quotation</button>
+        </a>
+      </div>
+      <div class="side_right">
+        <!-- HTML_Introduction -->
+        <div class="lists" id="HTML_Introduction">
+          <h3>What is HTML?</h3>
+          <ul>
+            <li>HTML stands for Hyper Text Markup Language</li>
+            <li>HTML is the standard markup language for creating Web pages</li>
+            <li>HTML describes the structure of a Web page</li>
+            <li>HTML consists of a series of elements</li>
+            <li>HTML elements tell the browser how to display the content</li>
+            <li>
+              HTML elements label pieces of content such as "this is a heading",
+              "this is a paragraph", "thisis a link", etc.
+            </li>
+          </ul>
+          <h2>The &lt;!DOCTYPE&gt; Declaration</h2>
+          <p>
+            The <code>&lt;!DOCTYPE&gt;</code> declaration represents the
+            document type, and helps browsers to display web pages correctly.
+          </p>
+        </div>
+        <hr />
+        <!-- HTML_Elements -->
+        <div class="HTML_Elements" id="HTML_Elements">
+          <p>My first paragraph.</p>
+          <h1>This is heading 1</h1>
+          <h2>This is heading 2</h2>
+          <h3>This is heading 3</h3>
+          <h4>This is heading 4</h4>
+          <h5>This is heading 5</h5>
+          <h6>This is heading 6</h6>
+          <br />
+        </div>
+        <hr />
+        <!-- Attributes -->
+        <div class="Attributes" id="Attributes">
+          <h3>href Attribute</h3>
+          <a href="https://www.w3schools.com">Visit W3Schools</a>
+          <h3>src Attribute</h3>
+          <div class="imgboxsize">
+            <!-- alt Attribute -->
+            <img
+              src="https://images.pexels.com/photos/15350516/pexels-photo-15350516.jpeg"
+            />
+            <img
+              src="https://images.pexelss/photos/15350516/pexels-photo-15350516.jpeg"
+              alt="pexels-photo"
+            />
+          </div>
+        </div>
+        <hr />
+        <!-- Paragraphs -->
+        <div class="Paragraphs" id="Paragraphs">
+          <p>This is a paragraph.</p>
+          <p>This is another paragraph.</p>
+
+          <p>
+            This paragraph contains a lot of lines in the source code, but the
+            browser ignores it.
+          </p>
+
+          <p>
+            This paragraph contains a lot of spaces in the source code, but the
+            browser ignores it.
+          </p>
+          <h5>pre Element</h5>
+          <pre>
+            My Bonnie lies over the ocean.
+          
+            My Bonnie lies over the sea.
+          
+            My Bonnie lies over the ocean.
+          
+            Oh, bring back my Bonnie to me.
+          </pre>
+        </div>
+        <hr />
+        <!-- Styles -->
+        <div class="Styles" id="Styles">
+          <h1 style="background-color: powderblue">This is a heading</h1>
+          <p style="background-color: tomato">This is a paragraph.</p>
+          <h5>Text Color</h5>
+          <h1 style="color: blue">This is a heading</h1>
+          <p style="color: red">This is a paragraph.</p>
+          <h5>Fonts</h5>
+          <h1 style="font-family: verdana">This is a heading</h1>
+          <p style="font-family: courier">This is a paragraph.</p>
+          <h5>Text Size</h5>
+          <h1 style="font-size: 300%">This is a heading</h1>
+          <p style="font-size: 160%">This is a paragraph.</p>
+          <h5>Text Alignment</h5>
+          <h1 style="text-align: center">Centered Heading</h1>
+          <p style="text-align: center">Centered paragraph.</p>
+        </div>
+        <hr />
+        <!-- Text Formatting -->
+        <div class="Text_Formatting" id="Text_Formatting">
+          <h1>Text_Formatting</h1>
+          <b>This text is bold</b><br />
+          <strong>This text is important!</strong><br />
+          <i>This text is italic</i><br />
+          <em>This text is emphasized</em><br />
+          <small>This is some smaller text.</small><br />
+          <p>Do not forget to buy <mark>milk</mark> today.</p>
+          <p>My favorite color is <del>blue</del> red.</p>
+          <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+          <p>This is <sub>subscripted</sub> text.</p>
+          <p>This is <sup>superscripted</sup> text.</p>
+        </div>
+        <hr />
+        <!-- Quotation -->
+        <div class="Quotation" id="Quotation">
+          <h1>Quotation</h1>
+          <h5>blockquote</h5>
+          <p>Here is a quote from WWF's website:</p>
+          <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As
+            the world's leading conservation organization, WWF works in nearly
+            100 countries. At every level, we collaborate with people around the
+            world to develop and deliver innovative solutions that protect
+            communities, wildlife, and the places in which they live.
+          </blockquote>
+          <h5>Short Quotations</h5>
+          <p>
+            WWF's goal is to:
+            <q>Build a future where people live in harmony with nature.</q>
+          </p>
+          <h5>Abbreviations</h5>
+          <p>
+            The <abbr title="World Health Organization">WHO</abbr> was founded
+            in 1948.
+          </p>
+          <h5>address</h5>
+          <address>
+            Written by John Doe.<br />
+            Visit us at:<br />
+            Example.com<br />
+            Box 564, Disneyland<br />
+            USA
+          </address>
+          <h5>cite for Work Title</h5>
+          <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+          <h5>bdo for Bi-Directional</h5>
+          <bdo dir="rtl">This text will be written from right to left</bdo>
+        </div>
+        <hr />
+        <!-- HTML Comment Tag -->
+        <div class="Comment_Tag" id="Comment_Tag">
+          <h1>Comment_Tag</h1>
+          <span class="commentcolor" style="color: green"
+            >&lt;!-- Write your comments here --&gt;</span
+          >
+        </div>
+        <hr />
+        <!-- Colors -->
+        <div class="Colors" id="Colors">
+          <h1>Colors</h1>
+          <h5>Background Color</h5>
+          <h1 style="background-color: DodgerBlue">Hello World</h1>
+          <p style="background-color: Tomato">Lorem ipsum...</p>
+          <h5>Text colors</h5>
+          <h1 style="color: Tomato">Hello World</h1>
+          <p style="color: DodgerBlue">Lorem ipsum...</p>
+          <p style="color: MediumSeaGreen">Ut wisi enim...</p>
+          <h5>Border Color</h5>
+          <h1 style="border: 2px solid Tomato">Hello World</h1>
+          <h1 style="border: 2px solid DodgerBlue">Hello chintu</h1>
+          <h1 style="border: 2px solid Violet">Hello Akash</h1>
+          <h5>RGB colors</h5>
+          <h1 style="background-color: rgb(255, 0, 0)">rgb(255, 0, 0)</h1>
+          <h1 style="background-color: rgb(0, 0, 255)">rgb(0, 0, 255)</h1>
+          <h1 style="background-color: #ee82ee">#ee82ee</h1>
+          <h1 style="background-color: #ffa500">#ffa500</h1>
+          <h1 style="background-color: hsl(39, 100%, 50%)">
+            hsl(39, 100%, 50%)
+          </h1>
+          <h1 style="background-color: hsl(248, 53%, 58%)">
+            hsl(248, 53%, 58%)
+          </h1>
+        </div>
+        <hr />
+        <!-- htmlCss -->
+        <div class="htmlcss" id="htmlcss">
+          <h1>HTML Styles - CSS</h1>
+          <h5>CSS stands for Cascading Style Sheets.</h5>
+          <h5>Inline CSS</h5>
+          <h1 style="color: blue">A Blue Heading</h1>
+          <p style="color: red">A red paragraph.</p>
+          <h5>Internal CSS</h5>
+          <a href="Internalpage.html" target="_blank" rel="noopener noreferrer"
+            >click for Internal CSS</a
+          >
+          <h5>External CSS used in this page</h5>
         </div>
 
+        <!-- html Images -->
+        <div class="Images" id="Images">
+          <h5>Image Maps</h5>
+          <p>
+            Try to click on the computer, phone, or the cup of coffee in the
+            image below:
+          </p>
+          <h5>picture elements</h5>
+          <div class="pic">
+            <picture>
+              <source media="(min-width: 850px)" srcset="pc.jpg" />
+              <source media="(min-width: 650px)" srcset="tab.jpg" />
+              <source media="(min-width: 465px)" srcset="phone.jpg" />
+              <img src="pc.jpg" alt="pc pic" />
+            </picture>
+          </div>
+          <h5>Image Maps</h5>
+          <div class="imgbox">
+            <img src="pic.jpg" alt="Workplace" usemap="#workmap" />
+
+            <map name="workmap">
+              <!-- coords left,top,right,bottom  -->
+              <area
+                shape="rect"
+                coords="130,0,315,350"
+                alt="Computer"
+                href="https://code.visualstudio.com/download"
+                target="_blank"
+              />
+              <area
+                shape="rect"
+                coords="320,30,460,270"
+                alt="Phone"
+                href="https://flutter.dev/"
+                target="_blank"
+              />
+            </map>
+          </div>
+        </div>
+        <hr />
+        <!-- Favicon -->
+
+        <a href="https://flutter.dev/" target="_self">click me</a>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
